@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+nav{
+    height: 60px;
+    background-color: #77BEF0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 4vw;
+    position: relative;
+}
+.option{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 4vw;
+ font-size: 1.2vw;
+ font-weight: 300;
+}
+nav button{
+    padding: 1vw 1vw;
+    border-radius: 1.5vw;
+    border: none;
+    cursor: pointer;
+    background-color: #EA5B6F;
+    font-weight: 600;
+}
+nav img {
+    height: 15px;
+    display: none;
+}
+.main{
+    height: calc(100% - 60px);
+    width: 100%;
+    background-color: white;
+    display: flex;
+    
+}
+.left{
+    height: calc(100% - 60px);
+    width: 55%;
+    padding: 5vw 5vw;
+}
+.right{
+    height: calc(100% - 60px);
+    width: 45%;
+    
+}
+.right img{
+    width: 100%;
+    height: auto;
+}
+
+.main .left h2 {
+    font-size: 3.5vw;
+    margin: 1vw 2vw;
+    width: 50%;
+}
+.main .left h2 span{
+    color: #EA5B6F;
+}
+.main .left p {
+    margin: 1vw 2vw ;
+    font-size: 1.3vw;
+    width: 50%;
+}
+.main .left button{
+    font-size: 2vw;
+    font-weight: 550;
+    padding: 1.3vw;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    background-color: #EA5B6F;
+    margin: 2vw 2vw;
+}
+.right p{
+    text-align: end;
+}
+
+@media (max-width : 600px) {
+    .option h4{
+     display: none;
+    }
+    .more{
+        display:inline;
+    }
+    nav button{
+        height: 7vw;
+        font-weight: 600;
+        padding: 1.5vw;
+        border: 1px solid #EA5B6F;
+        border-radius: 2.5vw;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top:48vw;
+    }
+    .left{
+    
+        width: 100%;
+        
+    }
+    .main .left h2{
+        font-size: 13vw;
+        margin: 2vw 5vw;
+        width: 80%;
+        
+    }
+    .main .left p{
+        font-size: 4vw;
+        margin: 1vw 6vw;
+        width: 90%;
+        height: 10%;
+    }
+    .main .left button{
+    padding: 1.5vw;
+    margin: 15vw 5vw;
+    height: 10vw;
+    width: 30vw;
+    font-size: 4vw;
+    }
+    .right{
+        width: 100%;
+        padding-top: 15vw;
+    }
+    .right p{
+        text-align: start;
+    }
+}
